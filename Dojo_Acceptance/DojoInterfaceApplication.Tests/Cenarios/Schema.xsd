@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Schema" targetNamespace="http://tempuri.org/Schema.xsd" xmlns:mstns="http://tempuri.org/Schema.xsd" xmlns="http://tempuri.org/Schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TesteIntegradoBancoOpenSourceConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="TesteIntegradoBancoOpenSourceConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TestProject1.Properties.Settings.GlobalReference.Default.TesteIntegradoBancoOpenSourceConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dojoJavaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dojoJavaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DojoInterfaceApplication.Tests.Properties.Settings.GlobalReference.Default.dojoJavaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Schema" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Schema" msprop:Generator_UserDSName="Schema">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="falhaLogin" msprop:Generator_TableClassName="falhaLoginDataTable" msprop:Generator_TableVarName="tablefalhaLogin" msprop:Generator_TablePropName="falhaLogin" msprop:Generator_RowDeletingName="falhaLoginRowDeleting" msprop:Generator_UserTableName="falhaLogin" msprop:Generator_RowChangingName="falhaLoginRowChanging" msprop:Generator_RowEvHandlerName="falhaLoginRowChangeEventHandler" msprop:Generator_RowDeletedName="falhaLoginRowDeleted" msprop:Generator_RowEvArgName="falhaLoginRowChangeEvent" msprop:Generator_RowChangedName="falhaLoginRowChanged" msprop:Generator_RowClassName="falhaLoginRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="falhaLogin_id" msprop:Generator_ColumnVarNameInTable="columnfalhaLogin_id" msprop:Generator_ColumnPropNameInRow="falhaLogin_id" msprop:Generator_ColumnPropNameInTable="falhaLogin_idColumn" msprop:Generator_UserColumnName="falhaLogin_id" type="xs:int" minOccurs="0" />
+              <xs:element name="usuario_id" msprop:Generator_ColumnVarNameInTable="columnusuario_id" msprop:Generator_ColumnPropNameInRow="usuario_id" msprop:Generator_ColumnPropNameInTable="usuario_idColumn" msprop:Generator_UserColumnName="usuario_id" type="xs:int" minOccurs="0" />
+              <xs:element name="dataOcorrencia" msprop:Generator_ColumnVarNameInTable="columndataOcorrencia" msprop:Generator_ColumnPropNameInRow="dataOcorrencia" msprop:Generator_ColumnPropNameInTable="dataOcorrenciaColumn" msprop:Generator_UserColumnName="dataOcorrencia" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Usuario" msprop:Generator_TableClassName="UsuarioDataTable" msprop:Generator_TableVarName="tableUsuario" msprop:Generator_TablePropName="Usuario" msprop:Generator_RowDeletingName="UsuarioRowDeleting" msprop:Generator_UserTableName="Usuario" msprop:Generator_RowChangingName="UsuarioRowChanging" msprop:Generator_RowEvHandlerName="UsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="UsuarioRowDeleted" msprop:Generator_RowEvArgName="UsuarioRowChangeEvent" msprop:Generator_RowChangedName="UsuarioRowChanged" msprop:Generator_RowClassName="UsuarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="usuario_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnusuario_id" msprop:Generator_ColumnPropNameInRow="usuario_id" msprop:Generator_ColumnPropNameInTable="usuario_idColumn" msprop:Generator_UserColumnName="usuario_id" type="xs:int" />
+              <xs:element name="login" msprop:Generator_ColumnVarNameInTable="columnlogin" msprop:Generator_ColumnPropNameInRow="login" msprop:Generator_ColumnPropNameInTable="loginColumn" msprop:Generator_UserColumnName="login" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="senha" msprop:Generator_ColumnVarNameInTable="columnsenha" msprop:Generator_ColumnPropNameInRow="senha" msprop:Generator_ColumnPropNameInTable="senhaColumn" msprop:Generator_UserColumnName="senha" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SucessoLogin" msprop:Generator_TableClassName="SucessoLoginDataTable" msprop:Generator_TableVarName="tableSucessoLogin" msprop:Generator_TablePropName="SucessoLogin" msprop:Generator_RowDeletingName="SucessoLoginRowDeleting" msprop:Generator_UserTableName="SucessoLogin" msprop:Generator_RowChangingName="SucessoLoginRowChanging" msprop:Generator_RowEvHandlerName="SucessoLoginRowChangeEventHandler" msprop:Generator_RowDeletedName="SucessoLoginRowDeleted" msprop:Generator_RowEvArgName="SucessoLoginRowChangeEvent" msprop:Generator_RowChangedName="SucessoLoginRowChanged" msprop:Generator_RowClassName="SucessoLoginRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sucessoLogin_id" msprop:Generator_ColumnVarNameInTable="columnsucessoLogin_id" msprop:Generator_ColumnPropNameInRow="sucessoLogin_id" msprop:Generator_ColumnPropNameInTable="sucessoLogin_idColumn" msprop:Generator_UserColumnName="sucessoLogin_id" type="xs:int" minOccurs="0" />
+              <xs:element name="usuario_id" msprop:Generator_ColumnVarNameInTable="columnusuario_id" msprop:Generator_ColumnPropNameInRow="usuario_id" msprop:Generator_ColumnPropNameInTable="usuario_idColumn" msprop:Generator_UserColumnName="usuario_id" type="xs:int" minOccurs="0" />
+              <xs:element name="dataLogin" msprop:Generator_ColumnVarNameInTable="columndataLogin" msprop:Generator_ColumnPropNameInRow="dataLogin" msprop:Generator_ColumnPropNameInTable="dataLoginColumn" msprop:Generator_UserColumnName="dataLogin" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Usuario" />
+      <xs:field xpath="mstns:usuario_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

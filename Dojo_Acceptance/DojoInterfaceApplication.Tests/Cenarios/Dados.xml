@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Schema xmlns="http://tempuri.org/Schema.xsd">
+
+  <Usuario>
+    <usuario_id>1</usuario_id>
+    <login>cfc</login>
+    <senha>123456</senha>
+  </Usuario>
+
+
+</Schema>
